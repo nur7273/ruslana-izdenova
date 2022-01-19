@@ -211,4 +211,8 @@ header > a {
         font-size: 12px;
         margin-left: 24px;
     }
+    
+    .main-text > a {
+        padding: 20px 50px;
+    }
 }
