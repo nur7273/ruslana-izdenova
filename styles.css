@@ -197,6 +197,7 @@ header > a {
 
     .main-text a {
         font-size: 10px;
+        width: 100%;
     }
 
     .main-text span {
@@ -212,7 +213,4 @@ header > a {
         margin-left: 24px;
     }
     
-    .main-text > a {
-        padding: 20px 50px;
-    }
 }
