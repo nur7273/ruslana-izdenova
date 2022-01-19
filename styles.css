@@ -176,3 +176,8 @@ header > a {
 .menu ul li a:hover {
     color: coral;
 }
+
+@media (max-width: 798px) {
+    .main{
+        padding: 40px;
+    }
