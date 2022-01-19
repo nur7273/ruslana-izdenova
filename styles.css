@@ -1,0 +1,178 @@
+/** Montserrat Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/** Rubik Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    z-index: 2;
+}
+
+.main.active{
+    right: 300px;
+}
+
+.main video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7ae582;
+    mix-blend-mode: overlay;
+    opacity: .2;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 10%;
+    z-index: 10;
+}
+
+header > a {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(menu-open.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active {
+    background: url(menu-close.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.main-text {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.main-text  h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+
+.main-text > h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.main-text > a {
+    padding: 20px 40px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: .4s ease-in;
+}
+
+.main-text > a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.main-text span {
+    color: #d8e2dc;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-bottom: 2rem;
+}
+
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    color: coral;
+}
