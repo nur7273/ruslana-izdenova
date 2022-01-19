@@ -198,6 +198,7 @@ header > a {
     .main-text a {
         font-size: 10px;
         text-align: center;
+       padding: 20px 40px;
     }
 
     .main-text span {
